@@ -177,7 +177,7 @@ section.home{
     position:relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url('/assets/bgimage.jpg');
+    background-image: url('../assets/bgimage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
