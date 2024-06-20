@@ -48,6 +48,32 @@ button.btn:hover{
     border: 1px solid var(--primary-clr)
 }
 
+header.section-heading{
+    position: relative;
+    max-width: 550px;
+    margin-bottom: 35px;
+    z-index: 3;
+}
+
+header.section-heading h3{
+    font-size: 16px;
+    color: var(--primary-clr);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+header.section-heading h1{
+    font-size: calc(24px + 1.5vw);
+    color: var(--dark-heading-clr);
+    font-weight: 500;
+}
+
+header.section-heading p{
+    font-size: 16px;
+    color: var(--dark-sub-heading-clr);
+    margin: 10px 0px 20px;
+    line-height: 1.3;
+}
 /* === Reusable Code Ends === */
 
 /* Home Section Styling Starts */
@@ -284,10 +310,84 @@ section.features{
     line-height: 1.3;
 }
 
-/* === Features Section Styling Starts === */
+/* === Features Section Styling Ends === */
 
+/* === About Section Styling Starts === */
 
+section.about{
+    position: relative;
+    width: 100%;
+    padding: 90px 8% 30px;
+}
 
+.about .about-contents{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6fr 7fr;
+    grid-gap: 20px 7%;
+    z-index: 2;
+}
+
+.about-contents .about-left-col{
+    position: relative;
+    width: 100%;
+}
+
+.about-contents .about-left-col img {
+    position: relative;
+    width: 100%;
+    min-width: 350px;
+    min-height: 500px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.about-contents .about-left-col .about-img-bg{
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    top: -20px;
+    left: -20px;
+    background-color: var(--bg-light-clr);
+    border-radius: 25px;
+    transform: rotate(-15deg);
+    z-index: 0;
+}
+
+.about-contents .about-right-col{
+    width: 100%;
+}
+
+.about-contents .about-right-col .section-heading{
+    margin-bottom: 15px;
+}
+
+.about-contents .about-right-col .about-facilities{
+    list-style: none;
+}
+
+.about-contents .about-right-col .about-facilities li{
+    position: relative;
+    font-size: 15px;
+    color: var(--dark-text-clr);
+    text-indent: 20px;
+    margin-bottom: 10px;
+}
+
+.about-right-col .about-facilities li::before{
+    position: absolute;
+    content: attr(check);
+    left: -20px;
+    color: var(--primary-clr);
+    font-weight: 600;
+}
+
+.about-right-col .about-btn{
+    margin-top: 25px;
+}
+
+/* === About Section Styling Ends === */
 
 /* === Media Query Starts === */
 @media (max-width: 1068px){}
