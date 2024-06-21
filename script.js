@@ -12,3 +12,20 @@ function toggleMenu(){
 for(var i = 0; i < navLinks.length; i++){
     navLinks[i].addEventListener('click', toggleMenu)
 }
+
+//Code for testimonials slider
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout: 6000,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+    }
+})
