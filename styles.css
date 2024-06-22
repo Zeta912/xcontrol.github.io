@@ -6,7 +6,6 @@
 }
 
 html{
-    /* Smooth Scroll */
     scroll-behavior: smooth;
 
     --primary-clr: #5c6fd5;
