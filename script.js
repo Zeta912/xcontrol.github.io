@@ -29,3 +29,17 @@ $('.owl-carousel').owlCarousel({
         },
     }
 })
+
+//Code To Show/Hide Menu When Scrolling
+var homeSection = document.querySelector('.home');
+window.addEventListener('scroll',pageScrollFunction);
+window.addEventListener('load', pageScrollFunction);
+
+function pageScrollFunction(){
+    if (window.scrollY > 120){
+        homeSection.classList.add('active');
+    }
+    else{
+        homeSection.classList.remove('active');
+    }
+}
